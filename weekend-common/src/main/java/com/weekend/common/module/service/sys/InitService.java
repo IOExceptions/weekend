@@ -11,6 +11,6 @@ import java.util.Map;
  */
 public interface InitService {
 
-    public Tip initTable(Map<String,Object> initTable);
+    public Tip initTable(Map<String,Object> param);
 
 }

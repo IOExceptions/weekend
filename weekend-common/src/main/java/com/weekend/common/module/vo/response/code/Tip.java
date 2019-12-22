@@ -14,4 +14,10 @@ public class Tip {
     private Object rows;
 
     private String message;
+
+    public Tip error(Integer code,String message){
+        this.code=code;
+        this.message=message;
+        return this;
+    }
 }

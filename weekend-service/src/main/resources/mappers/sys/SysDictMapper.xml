@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weekend.common.module.mapper.sys.SysDictMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.weekend.common.module.model.sys.SysDict">
+        <id column="id" property="id" />
+        <result column="moudle_id" property="moudleId" />
+        <result column="show_order" property="showOrder" />
+        <result column="parent_id" property="parentId" />
+        <result column="type_name" property="typeName" />
+        <result column="code" property="code" />
+        <result column="name" property="name" />
+        <result column="name6" property="name6" />
+        <result column="name5" property="name5" />
+        <result column="name4" property="name4" />
+        <result column="name3" property="name3" />
+        <result column="name2" property="name2" />
+        <result column="value" property="value" />
+        <result column="remark" property="remark" />
+        <result column="parent_ids" property="parentIds" />
+        <result column="child_nums" property="childNums" />
+        <result column="value2" property="value2" />
+        <result column="is_system" property="isSystem" />
+        <result column="business_type" property="businessType" />
+        <result column="is_app_show" property="isAppShow" />
+        <result column="is_web_show" property="isWebShow" />
+        <result column="data_source_type" property="dataSourceType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, moudle_id, show_order, parent_id, type_name, code, name, name6, name5, name4, name3, name2, value, remark, parent_ids, child_nums, value2, is_system, business_type, is_app_show, is_web_show, data_source_type
+    </sql>
+
+</mapper>

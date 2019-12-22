@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weekend.common.module.mapper.sys.SysModuleCatalogMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.weekend.common.module.model.sys.SysModuleCatalog">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="is_delete" property="isDelete" />
+        <result column="name" property="name" />
+        <result column="icon" property="icon" />
+        <result column="type" property="type" />
+        <result column="create_name" property="createName" />
+        <result column="create_date" property="createDate" />
+        <result column="create_id" property="createId" />
+        <result column="modifier_name" property="modifierName" />
+        <result column="modifier_date" property="modifierDate" />
+        <result column="modifier_id" property="modifierId" />
+        <result column="table_class" property="tableClass" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, parent_id, is_delete, name, icon, type, create_name, create_date, create_id, modifier_name, modifier_date, modifier_id, table_class
+    </sql>
+
+</mapper>

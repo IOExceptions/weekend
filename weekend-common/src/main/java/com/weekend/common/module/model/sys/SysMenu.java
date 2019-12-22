@@ -15,7 +15,7 @@ import java.util.List;
  * </p>
  *
  * @author WangZhiKun
- * @since 2019-12-19
+ * @since 2019-12-22
  */
 public class SysMenu extends Model<SysMenu> {
 
@@ -138,7 +138,6 @@ public class SysMenu extends Model<SysMenu> {
 
     @TableField(exist = false)
     private List<SysMenu> childNodes;
-
 
 
     public Long getId() {

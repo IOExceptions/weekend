@@ -46,8 +46,8 @@ public class MyBatisPlusGenerator {
                 .setDbColumnUnderline(true)  // 指定表名 字段名是否使用下划线
                 .setNaming(NamingStrategy.underline_to_camel) // 数据库表映射到实体的命名策略
                 //.setTablePrefix("tbl_")
-                .setInclude("sys_menu");  // 生成的表
-
+                .setInclude("sys_module_catalog");  // 生成的表
+        //sys_dict sys_field sys_menu sys_module sys_table
         //4. 包名策略配置
         PackageConfig pkConfig = new PackageConfig();
         pkConfig.setParent("com.weekend")

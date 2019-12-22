@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weekend.common.module.mapper.sys.SysTableFieldMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.weekend.common.module.model.sys.SysTableField">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="code" property="code" />
+        <result column="input_type" property="inputType" />
+        <result column="is_verify" property="isVerify" />
+        <result column="list_show" property="listShow" />
+        <result column="form_show" property="formShow" />
+        <result column="view_show" property="viewShow" />
+        <result column="edit_show" property="editShow" />
+        <result column="comment_text" property="commentText" />
+        <result column="type" property="type" />
+        <result column="length" property="length" />
+        <result column="is_delete" property="isDelete" />
+        <result column="create_name" property="createName" />
+        <result column="create_date" property="createDate" />
+        <result column="create_id" property="createId" />
+        <result column="modifier_name" property="modifierName" />
+        <result column="modifier_date" property="modifierDate" />
+        <result column="modifier_id" property="modifierId" />
+        <result column="is_refer" property="isRefer" />
+        <result column="refer_type" property="referType" />
+        <result column="dict_code" property="dictCode" />
+        <result column="refer_table_name" property="referTableName" />
+        <result column="refer_table_field_id" property="referTableFieldId" />
+        <result column="is_synchronization" property="isSynchronization" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, code, input_type, is_verify, list_show, form_show, view_show, edit_show, comment_text, type, length, is_delete, create_name, create_date, create_id, modifier_name, modifier_date, modifier_id, is_refer, refer_type, dict_code, refer_table_name, refer_table_field_id, is_synchronization
+    </sql>
+
+</mapper>
