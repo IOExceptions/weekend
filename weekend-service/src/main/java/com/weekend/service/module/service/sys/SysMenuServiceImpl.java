@@ -9,6 +9,7 @@ import com.weekend.common.module.model.sys.SysMenu;
 import com.weekend.common.module.service.sys.SysMenuService;
 import com.weekend.common.module.vo.response.code.SuccessTip;
 import com.weekend.common.module.vo.response.code.Tip;
+import com.weekend.service.module.service.base.BaseServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +24,7 @@ import java.util.List;
  * @since 2019-12-19
  */
 @Service
-public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> implements SysMenuService {
+public class SysMenuServiceImpl extends BaseServiceImpl<SysMenu> implements SysMenuService {
 
     @Autowired
     private SysMenuMapper menuDao;
@@ -59,6 +60,6 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
         childs.forEach(item->{
             childNodes(item.getId(),item);
         });
-
     }
+
 }

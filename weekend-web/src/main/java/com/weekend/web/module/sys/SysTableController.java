@@ -1,6 +1,7 @@
 package com.weekend.web.module.sys;
 
 
+import com.weekend.web.module.base.BaseController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
@@ -15,7 +16,7 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 @RequestMapping("/sysTable")
-public class SysTableController {
+public class SysTableController  extends BaseController {
 
 }
 

@@ -3,6 +3,7 @@ package com.weekend.common.module.service.sys;
 
 import com.baomidou.mybatisplus.service.IService;
 import com.weekend.common.module.model.sys.SysMenu;
+import com.weekend.common.module.service.base.BaseService;
 import com.weekend.common.module.vo.response.code.Tip;
 
 /**
@@ -13,7 +14,7 @@ import com.weekend.common.module.vo.response.code.Tip;
  * @author WangZhiKun
  * @since 2019-12-19
  */
-public interface SysMenuService extends IService<SysMenu> {
+public interface SysMenuService extends BaseService<SysMenu> {
 
     /**
      * 获取所有有效的菜单

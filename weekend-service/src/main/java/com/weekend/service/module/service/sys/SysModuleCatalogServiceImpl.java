@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.weekend.common.module.mapper.sys.SysModuleCatalogMapper;
 import com.weekend.common.module.model.sys.SysModuleCatalog;
 import com.weekend.common.module.service.sys.SysModuleCatalogService;
+import com.weekend.service.module.service.base.BaseServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,6 +17,6 @@ import org.springframework.stereotype.Service;
  * @since 2019-12-22
  */
 @Service
-public class SysModuleCatalogServiceImpl extends ServiceImpl<SysModuleCatalogMapper, SysModuleCatalog> implements SysModuleCatalogService {
+public class SysModuleCatalogServiceImpl extends BaseServiceImpl<SysModuleCatalog> implements SysModuleCatalogService {
 
 }

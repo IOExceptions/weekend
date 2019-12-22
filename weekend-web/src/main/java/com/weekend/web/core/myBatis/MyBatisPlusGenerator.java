@@ -57,6 +57,11 @@ public class MyBatisPlusGenerator {
                 .setEntity("entity")
                 .setXml("mapper");//mapper.xml
 
+        //配置Service 接口实现类
+        stConfig.setSuperServiceClass("com.weekend.common.module.service.base.BaseService");
+        stConfig.setSuperServiceImplClass("com.weekend.service.module.service.base.BaseServiceImpl");
+        stConfig.setSuperControllerClass("com.weekend.web.module.base.BaseController");
+
         //5. 整合配置
         AutoGenerator  ag = new AutoGenerator();
         ag.setGlobalConfig(config)

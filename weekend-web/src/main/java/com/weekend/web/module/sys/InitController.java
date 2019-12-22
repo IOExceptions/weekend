@@ -2,6 +2,7 @@ package com.weekend.web.module.sys;
 
 import com.weekend.common.module.service.sys.InitService;
 import com.weekend.common.module.vo.response.code.Tip;
+import com.weekend.web.module.base.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/init")
-public class InitController {
+public class InitController extends BaseController {
 
     @Autowired
     private InitService initService;
