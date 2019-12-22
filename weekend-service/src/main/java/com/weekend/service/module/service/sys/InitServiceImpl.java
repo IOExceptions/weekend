@@ -18,7 +18,7 @@ public class InitServiceImpl implements InitService {
     @Override
     public Tip initTable(Map<String, Object> initTable) {
         Tip tip=new SuccessTip();
-
+        System.out.print("==========");
         return tip;
     }
 }
