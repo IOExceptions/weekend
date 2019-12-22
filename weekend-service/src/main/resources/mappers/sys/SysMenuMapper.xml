@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weekend.common.module.mapper.sys.SysMenuMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.weekend.common.module.model.sys.SysMenu">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="parent_ids" property="parentIds" />
+        <result column="module_id" property="moduleId" />
+        <result column="code" property="code" />
+        <result column="menu_type" property="menuType" />
+        <result column="name6" property="name6" />
+        <result column="name5" property="name5" />
+        <result column="name4" property="name4" />
+        <result column="name3" property="name3" />
+        <result column="name2" property="name2" />
+        <result column="name" property="name" />
+        <result column="spell_code" property="spellCode" />
+        <result column="icon" property="icon" />
+        <result column="url" property="url" />
+        <result column="show_order" property="showOrder" />
+        <result column="depth" property="depth" />
+        <result column="status" property="status" />
+        <result column="is_system" property="isSystem" />
+        <result column="creator" property="creator" />
+        <result column="createdate" property="createdate" />
+        <result column="modifier" property="modifier" />
+        <result column="modifiedtime" property="modifiedtime" />
+        <result column="company_id" property="companyId" />
+        <result column="resource_id" property="resourceId" />
+        <result column="child_nums" property="childNums" />
+        <result column="is_self" property="isSelf" />
+        <result column="is_show" property="isShow" />
+        <result column="data_source_type" property="dataSourceType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, parent_id, parent_ids, module_id, code, menu_type, name6, name5, name4, name3, name2, name, spell_code, icon, url, show_order, depth, status, is_system, creator, createdate, modifier, modifiedtime, company_id, resource_id, child_nums, is_self, is_show, data_source_type
+    </sql>
+
+</mapper>
